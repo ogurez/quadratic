@@ -8,8 +8,8 @@ module.exports = function solveEquation(equation) {
     
     var Desc=Math.pow(b,2) - 4*a*c;
     
-    var sol1=(-b +Math.sqrt(Desc))/(2*a);
-    var sol2=(-b -Math.sqrt(Desc))/(2*a);
+    var sol1=Math.round((-b +Math.sqrt(Desc))/(2*a));
+    var sol2=Math.round((-b -Math.sqrt(Desc))/(2*a));
     var solutions=[];
     
     solutions.push(sol1);
