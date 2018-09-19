@@ -15,7 +15,9 @@ module.exports = function solveEquation(equation) {
     solutions.push(sol1);
     solutions.push(sol2);
     
-    solutions.sort();
+    solutions.sort(function(left, right) {
+      return left - right;
+    });
     
     return solutions;
 }
